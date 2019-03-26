@@ -1,6 +1,8 @@
 /** \file paint_exception.cpp
  * \brief Plik z definicjami metod klasy paint_exception.
-*/#include "paint_exception.hpp"
+*/
+
+#include "paint_exception.hpp"
 
 paint_exception::paint_exception(enum exception_type type) {
     if (type < number_of_exceptions)
@@ -22,6 +24,9 @@ std::string paint_exception::what(){
     return exception_string;
 }
 
+const char* paint_exception::what() const noexcept {
+    return exception_string.c_str();
+}
 paint_exception::~paint_exception() {
     //dtor
 }

@@ -25,12 +25,12 @@ enum tool_type {BRUSH,        /**< Pędzel */
 #include <deque>
 #include <cmath>
 
-#include "../base_window.hpp"
+#include "../base_component.hpp"
 #include "../paint_exception.hpp"
 
 /** \brief Klasa bazowa dla wszystkich typów narzędzi.
  */
-class tool : public base_window
+class tool : public base_component
 {
     public:
         /*Paiting*/

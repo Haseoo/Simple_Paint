@@ -1,5 +1,5 @@
-/** \file base_window.hpp
- * \brief Plik z definicją klasy base_window.
+/** \file base_component.hpp
+ * \brief Plik z definicją klasy base_component.
 */
 
 #ifndef BASE_WINDOW_H
@@ -12,12 +12,12 @@
 
 /** \brief Klasa bazowa dla elementów okna programu oraz narzędzi.
  */
-class base_window {
+class base_component {
     public:
         /** \brief Destruktor klasy.
          *
          */
-        virtual ~base_window() {
+        virtual ~base_component() {
 
         }
     protected:

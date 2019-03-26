@@ -5,10 +5,11 @@
 #define PAINT_EXCEPTION_H
 
 #include <string>
+#include <exception>
 
 /** \brief Klasa do obsługi wyjątków programu.
  */
-class paint_exception
+class paint_exception : public std::exception
 {
     public:
         /** \brief Typ wyliczeniowy służący do obsługi wyjątków w programie.
@@ -78,6 +79,8 @@ class paint_exception
          *
          */
         std::string what();
+
+        const char* what() const noexcept;
 
         /** \brief Destruktor klasy.
          *

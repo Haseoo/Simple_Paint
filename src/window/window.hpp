@@ -11,7 +11,7 @@
 #include <iostream>
 #include <fstream>
 #include <deque>
-#include "../base_window.hpp"
+#include "../base_component.hpp"
 #include "menu.hpp"
 #include "../file_manager/file_manager.hpp"
 #include "../tools/tool.hpp"
@@ -33,7 +33,7 @@
 
 /** \brief Klasa służąca do obsługi okna głównego programu.
  */
-class window : public base_window
+class window : public base_component
 {
     public:
         /*Constructor*/

@@ -10,7 +10,7 @@
 #include <fstream>
 #include <string>
 #include <deque>
-#include "../base_window.hpp"
+#include "../base_component.hpp"
 #include "../tools/tool.hpp"
 
 /** \brief Typ wyliczeniowy służący do określenia przycisku z menu.
@@ -26,7 +26,7 @@
 
 /** \brief Klasa służaca do rysowania menu oraz obsługi kliknięć w jego obrębie.
  */
-class menu : public base_window
+class menu : public base_component
 {
     public:
         /*Constructor*/

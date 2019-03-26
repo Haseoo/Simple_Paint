@@ -5,7 +5,7 @@
 #ifndef FILE_MANAGER_H
 #define FILE_MANAGER_H
 
-#include "../base_window.hpp"
+#include "../base_component.hpp"
 #include "../gtk_base_window.hpp"
 #include "image_container/image_container.hpp"
 #include "image_container/bmp_image_container.hpp"
@@ -22,7 +22,7 @@ enum file_manager_mode {OPEN_FILE, /**< Otwieranie plików. */
 
 /** \brief Klasa mangera plików.
  */
-class file_manager : public base_window, public gtk_base_window {
+class file_manager : public base_component, public gtk_base_window {
     public:
         /** \brief Konstruktor klasy. Odczytuje informacje z pliku zasobów. Może "rzucić" wyjątek typu  paint_exception w przypadku błędu.
          *
